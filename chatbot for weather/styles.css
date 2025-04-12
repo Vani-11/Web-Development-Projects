@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url('sky.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+.avatar{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+#header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.chat-container {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    background-color:rgba(255,255,255,0.9);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position:relative;
+}
+#chat-box::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+}
+.chat-box::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chat-box {
+    flex-grow:1;
+    box-sizing: border-box;
+    overflow-y: auto;
+    padding: 20px;
+    border-bottom: 1px solid #dddddd;
+    scroll-behavior: smooth;
+}
+.chat-message {
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 75%;
+    line-height: 1.5;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+    word-wrap:break-word;
+    
+}
+.bot {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    color: #333;
+    align-self: flex-start;
+    text-align: left;
+    border-radius: 10px;
+    line-height: 1.5;
+    padding: 20px;
+}
+.user {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            align-self: flex-end;
+            text-align: right;
+            border-radius: 10px;
+            max-width: 75%;
+            margin: 10px 0;
+            padding: 20px;
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+button:active {
+    transform: scale(0.95);
+}
