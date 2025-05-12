@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VK Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <!-- Logo -->
+            <img src="logo.png.jpg" alt="VK Academy Logo" class="logo-img">
+            <h1>VK Academy</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="register.html">Register</a></li> <!-- Link to the register page -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="intro">
+            <h2>Welcome to VK Academy</h2>
+            <p>Empowering students to achieve their academic and professional goals.</p>
+            <button onclick="alertMessage()">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+
+    <section id="courses">
+       <h2>Our Courses</h2>
+       <div class="course-list">
+        <!-- 9th and 10th Courses -->
+        <div class="course-card" onclick="toggleSubjects(this)">
+            <h3>9th & 10thGrade</h3>
+            <ul class="subjects">
+                <li>English</li>
+                <li>Maths</li>
+                <li>Science </li>
+                <li>Social Science</li>
+            </ul>
+        </div>
+
+        <!-- 11th and 12th Courses -->
+        <div class="course-card"  onclick="toggleSubjects(this)">
+            <h3>11th & 12th Grade</h3>
+            <ul class="subjects">
+                <li>Mathematics</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+                <li>Biology</li>
+                <li>Computer Science</li>
+            </ul>
+        </div>
+
+        <!-- Undergraduate and Postgraduate Courses -->
+        <div class="course-card"  onclick="toggleSubjects(this)">
+            <h3>BSc</h3>
+            <ul class="subjects">
+                <li>All Subjects</li>
+            </ul>
+        </div>
+        <div class="course-card" onclick="toggleSubjects(this)">
+            <h3>MSc</h3>
+            <ul class="subjects">
+                <li>All Subjects</li>
+            </ul>
+        </div>
+        <div class="course-card"  onclick="toggleSubjects(this)"> 
+            <h3>MCA</h3>
+            <ul class="subjects">
+                <li>All Subjects</li>
+            </ul>
+        </div>
+        <div class="course-card"  onclick="toggleSubjects(this)">
+            <h3>Diploma</h3>
+            <ul class="subjects">
+                <li>All Diploma Courses</li>
+            </ul>
+        </div>
+        <div class="course-card" onclick="toggleSubjects(this)">
+            <h3>B.Tech</h3>
+            <ul class="subjects">
+                <li>M1</li>
+                <li>M2</li>
+                <li>M3</li>
+                <li>M4</li>
+            </ul>
+        </div>
+        <div class="course-card" onclick="toggleSubjects(this)">
+            <h3>BCom</h3>
+            <ul class="subjects">
+                <li>All Subjects</li>
+            </ul>
+        </div>
+        <div class="course-card center-card"  onclick="toggleSubjects(this)">
+            <h3>MCom</h3>
+            <ul  class="subjects">
+                <li>All Subjects</li>
+            </ul>
+        </div>
+        <div class="course-card center-card"  onclick="toggleSubjects(this)">
+            <h3>MBA</h3>
+            <ul class="subjects">
+                <li>Mathematics</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+                <li>Accountancy</li>
+                <li>Computer Science</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About VK Academy</h2>
+        <p>VK Academy is a premier educational institution dedicated to helping students excel in their studies and build a brighter future.We offer high-quality learning experience in varity of fields,from <span class="highlight">school</span> to <span class="highlight">college</span> and beyond. Our mission is to <span class="highlight">empower</span> students to reach their full potential and create a positive impact in the world.
+        </p>
+    </section>
+    <!-- Subject Video Section -->
+<section id="subject-video">
+    <h2>Subject Video</h2>
+    <div id="video-container" style="display:none; text-align:center;">
+        <iframe id="video-frame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="name" required>
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="email" required>
+            <label for="contact-message">Message:</label>
+            <textarea id="contact-message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 VK Academy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
